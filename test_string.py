@@ -5,7 +5,7 @@ def test_ssl_expiry_date_format():
   hostname ="sib.seal.or.id"
   expiry_date= get_ssl_expiry_date(hostname)
 
-  assert re.match(r"\d{4}-d\{2}-\d{2} \d{2}:\d{2}:\d{2}", str(expiry_date)) is not None
+  assert re.match(r"\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}", str(expiry_date)) is not None
 
 def test_hostname_format():
   hostname="sib.seal.or.id"
