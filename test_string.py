@@ -1,4 +1,4 @@
-import pe
+import re
 from main import get_ssl_expiry_date
 
 def test_ssl_expiry_date_format():
